@@ -1,0 +1,122 @@
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: rgba(231, 255, 238, 0.2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap; 
+}
+
+
+.box {
+    position: relative;
+    width: 60%;  
+    height: 60%;
+    max-width: 600px;  
+    max-height: 600px; 
+    background-color: transparent;
+    border: 10px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    flex-direction: column;
+}
+
+
+.title-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 20px;  
+    z-index: 2; 
+}
+
+h1 {
+    font-size: 4em;
+    color: black; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    transform: rotate(-10deg); 
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.laparium-paragraph {
+    max-width: 100%;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 30px;
+    text-align: left;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 3em; 
+        text-align: center;
+        transform: none; 
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .box {
+        width: 80%;
+        height: 80%;
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
